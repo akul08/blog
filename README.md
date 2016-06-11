@@ -8,8 +8,8 @@ Just another minimalist Jekyll theme that focuses on technical writing. Designed
 
 ### Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](http://i.imgur.com/WHcnbYF.png)
 
-License
+### License
 
 [MIT](LICENSE.md)
