@@ -10,9 +10,9 @@ I am a Python enthusiast and Web Developer.
 I have worked with 2 startups.
 In the Winter'15, I worked as a Backend developer at [Zoukloans][1], a FinTect startup in Noida, India.
 
-From January'16, I was working as a Data Analytics intern at [Inspiration Edge][2], a design driven software company working with Data and Viz.
+Since January'16, I was working as a Data Analytics intern at [Inspiration Edge][2], a design driven software company working with Data and Viz.
 
-Being a FOSS enthusiast, you can find my most of my projects open-sourced on [Github][3]. You can find my Resume [here][4].
+Being a FOSS enthusiast, you can find my most of my projects open-sourced on [Github][3]. My Resume is attached [hereby][4].
 
 If you want me to **post** something or Just want to **Say Hi!** Feel free to **[ping me][5]**.  
 
