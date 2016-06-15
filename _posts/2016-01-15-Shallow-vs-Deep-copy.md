@@ -17,18 +17,14 @@ An object copy is a process where a data object has its attributes copied to ano
 
 Assignment statements in Python do not copy objects, they create bindings between a target and an object. For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. This module provides generic shallow and deep copy operations.
 
+
 `# python`
 
-`import copy`
-
-`copy.copy(x) # Return a shallow copy of x.`
-
-`copy.deepcopy(x) # Return a deep copy of x.`
-
-```exception copy.error
-    # Raised for module specific errors.
-```
-
+    import copy
+    copy.copy(x) # Return a shallow copy of x.
+    copy.deepcopy(x) # Return a deep copy of x.
+    exception copy.error
+        # Raised for module specific errors.
 ---
 
 ### The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances):
