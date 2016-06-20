@@ -193,9 +193,15 @@ or
 
 ### To Generate a log file
 
-To collect the cron execution execution log in a file:
+To store the cron output in a file, use the closing bracket (>) again:
 
-    30 18 * * * rm /home/someuser/tmp/* > /home/someuser/cronlogs/clean_tmp_dir.log
+    10 * * * * /usr/bin/php /www/virtual/username/cron.php > /var/log/cron.log
+
+That will rewrite the output file every time. If you would like to append the output at the end of the file instead of a complete rewrite, use double closing bracket (>>) instead:
+
+    10 * * * * /usr/bin/php /www/virtual/username/cron.php >> /var/log/cron.log
+
+### To Block Output
 
 If your script is very talkative, and issues all sort of information when it executes, you'll probably want to shut it up (unless you are starved for email messages). To do this, we need to send all the normal output to a place called "/dev/null" which is basically like a black hole. It accepts anything you dump there, but you will never see it again.
 
@@ -232,3 +238,39 @@ You can redirect stdout to stderr by doing..
     echo test 2>&1
 
 So, in short.. 2> redirects stderr to an (unspecified) file, appending &1 redirects stderr to stdout
+
+### Executable Scripts
+
+    10 * * * * /usr/bin/php /www/virtual/username/hello.php
+
+Normally you need to specify the parser at the beginning of the command as we have been doing. But there is actually a way to make your PHP scripts executable from the command line like a CGI script.
+
+You need is to add the path to the parser as the first line of the script, like hello.php:
+
+    #!/usr/local/bin/php
+    <?php
+
+    echo "hello world\n";
+
+    // ...
+
+    ?>
+
+Also make sure to set proper chmod (like 755) to make the file executable.
+
+    chmod 755 hello.php
+    ./hello.php
+
+When you have an executable script, the cron job can be shorter like this:
+
+    10 * * * * /www/virtual/username/hello.php
+
+### What is **#!** in above scripts?
+
+The **shebang line(#!)** in any script determines the script's ability to be executed like an standalone executable without typing python beforehand in the terminal or when double clicking it in a file manager(when configured properly). It isn't necessary but generally put there so when someone sees the file opened in an editor, they immediately know what they're looking at. However, which shebang line you use IS important; Correct usage is:
+
+    #!/usr/bin/env python
+
+``#!/usr/bin/env`` python Usually defaults to python 2.7.latest, and the following defaults to 3.latest
+
+    #!/usr/bin/env python3
