@@ -8,7 +8,7 @@ Hi, I'm **Akul Mehra** and thanks for stumbling upon my Blog. I am currently a C
 I am a Python enthusiast and Web Developer.
 
 I have worked with 2 startups.
-In the Winter'15, I worked as a Backend developer at [Zoukloans][1], a FinTect startup in Noida, India.
+In the Winter'15, I worked as a Backend developer at [Zoukloans][1], a FinTech startup in Noida, India.
 
 Since January'16, I was working as a Data Analytics intern at [Inspiration Edge][2], a design driven software company working with Data and Viz.
 
