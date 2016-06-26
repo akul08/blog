@@ -274,3 +274,9 @@ The **shebang line(#!)** in any script determines the script's ability to be exe
 ``#!/usr/bin/env`` python Usually defaults to python 2.7.latest, and the following defaults to 3.latest
 
     #!/usr/bin/env python3
+
+### How to run multiple scripts at same time
+
+you can use article "&" for parallel work and "&&" step-by-step launch script
+
+    #script.sh & script2.sh & script.sh

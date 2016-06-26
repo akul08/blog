@@ -632,23 +632,4 @@ For all containers listed by image:
 docker ps -a -f ancestor=ubuntu
 ```
 
-## Contributing
-
 This cheatsheet is available [here](https://github.com/wsargent/docker-cheat-sheet).
-Here's how to contribute to this cheat sheet.
-
-### Open README.md
-
-Click [README.md](https://raw.githubusercontent.com/wsargent/docker-cheat-sheet/master/README.md) <-- this link
-
-![Click This](https://raw.githubusercontent.com/wsargent/docker-cheat-sheet/master/images/click.png)
-
-### Edit Page
-
-![Edit This](https://raw.githubusercontent.com/wsargent/docker-cheat-sheet/master/images/edit.png)
-
-### Make Changes and Commit
-
-![Change This](https://raw.githubusercontent.com/wsargent/docker-cheat-sheet/master/images/change.png)
-
-![Commit](https://raw.githubusercontent.com/wsargent/docker-cheat-sheet/master/images/commit.png)
