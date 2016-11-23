@@ -19,5 +19,5 @@ If you want me to **post** something or Just want to **Say Hi!** Feel free to **
 [1]:https://www.zoukloans.com/
 [2]:http://www.inspirationedge.com/
 [3]:https://github.com/akul08/
-[4]:http://akul08.github.io/resume/resume.pdf
+[4]:http://akul.me/resume/resume.pdf
 [5]:mailto:mehra.akul@gmail.com

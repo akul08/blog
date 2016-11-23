@@ -11,7 +11,7 @@ title: "Akul's"
 title2: " Blog" # default: ""
 description: "My Personal blog on Jekyll."
 keywords: "Jekyll, blog, akul, mehra, developer, python, programmer"
-url: http://akul08.github.io
+url: http://akul.me
 baseurl: "/blog"
 # baseurl: null
 
@@ -41,7 +41,7 @@ author:
   bio      : "“Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.”"
   thumb    : /images/author.jpg
   email    : mehra.akul@gmail.com
-  url      : http://akul08.github.io
+  url      : http://akul.me
   github   : http://github.com/akul08
   twitter  : http://twitter.com/AkulMehra
   facebook : https://www.facebook.com/akul08

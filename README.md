@@ -2,4 +2,4 @@
 
 Blog Made using Jekyll.
 
-Here is the [link](http://akul08.github.io/blog/).
+Here is the [link](http://akul.me/blog/).
