@@ -3,7 +3,7 @@ layout: post
 title: "Proxy Cheatsheet For Scraping"
 comments: true
 description: "Proxy Cheatsheet For Scraping"
-keywords: "python, cheatsheet, proxy, scraping, scrapping, BeautifulSoup, beautiful soup, beautiful-soup, bs4, BeautifulSoup4, scrape, scrapy, tor, the onion router, http, https, socks5, privoxy, selenium, browser proxy, requests, python3, ipify, polipo, browser agent, user agent, scrapy middleware, proxy middleware, proxy cheatsheet, firefox, chrome, cheatsheetsm proxies, theOnionRouter, TOR"
+keywords: "python, cheatsheet, proxy, scraping, scrapping, BeautifulSoup, beautiful soup, beautiful-soup, bs4, BeautifulSoup4, scrape, scrapy, tor, the onion router, http, https, socks5, privoxy, selenium, browser proxy, requests, python3, ipify, polipo, browser agent, user agent, scrapy middleware, proxy middleware, proxy cheatsheet, firefox, chrome, cheatsheetsm proxies, theOnionRouter, TOR, forward, http, https, forward-socks5, 127.0.0.1:9050, multiple, user, hide"
 ---
 
 ---
@@ -19,6 +19,24 @@ Tor works on socks5 proxy, hence for those which do not support socks5, we will 
 ### Install **Privoxy**
 
 `sudo apt-get install privoxy`
+
+To set Privoxy to forward its traffic (http/https) to Tor (socks5), configure the forward parameter.
+Edit `/etc/privoxy/config` on Ubuntu.
+
+`sudo nano /etc/pivoxy/config`
+
+ Uncomment the following line:
+
+`forward-socks5 / 127.0.0.1:9050 .`
+
+Restart the tor and privoxy service.
+
+`sudo service tor restart`
+
+`sudo service privoxy restart`
+
+Socks5 port (Tor) will be 8118.
+HTTP/HTTPS port (Privoxy) will be 9050, which would be forwarded to Tor.
 
 ---
 
